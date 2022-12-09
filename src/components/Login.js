@@ -6,7 +6,7 @@ import { useStateValue } from "../StateProvider";
 import { actionTypes } from "../reducer";
 import Footer from "./Footer";
 function Login() {
-  const [{ user }, dispatch] = useStateValue();
+  const [ _, dispatch] = useStateValue();
 
   const signIn = () => {
     authentication

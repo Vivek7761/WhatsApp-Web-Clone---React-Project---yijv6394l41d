@@ -16,7 +16,7 @@ function ChatRoom() {
   const { roomid } = useParams();
   const [roomname, setroomname] = useState("");
   const [message, setmessages] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     if (roomid) {

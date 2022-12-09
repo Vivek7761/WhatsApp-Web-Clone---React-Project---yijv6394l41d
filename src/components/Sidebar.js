@@ -10,7 +10,7 @@ import { database } from "../firebase";
 import { useStateValue } from "../StateProvider";
 function Sidebar() {
   const [rooms, setrooms] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     const unsubsctibe = database.collection("rooms").onSnapshot((snapshot) =>
